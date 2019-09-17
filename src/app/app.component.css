@@ -1,0 +1,20 @@
+.topo{
+    width: 100%;
+    background-color: darkslateblue;
+    text-align: center;
+    border: 5px bold blueviolet;
+}
+
+.white_title{
+    color: antiquewhite;
+    font-family: lato;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: abel;
+}

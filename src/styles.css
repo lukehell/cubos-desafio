@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face{
+    font-family: lato;
+    src: url(assets/fonts/Lato-Black.ttf) format("truetype");
+}
+@font-face{
+    font-family: abel;
+    src: url(assets/fonts/Abel-Regular.ttf) format("truetype");
+}

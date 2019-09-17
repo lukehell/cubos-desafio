@@ -1,0 +1,93 @@
+.area_busca{
+    align-content: stretch;
+    width: 600px;
+    height: 100px;
+}
+
+#user_textbox{
+    width: 80%;
+    height: 30px;
+    border-radius: 20px;
+    font-family: abel;
+    background-color: seashell;
+    color: blue;
+    text-align: center;    
+}
+
+.search_button{
+    width: 80%;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.movies_container{
+    width: 600px;
+    
+}
+
+li{
+    list-style-type: none;
+}
+
+.filmes{
+    
+}
+
+.filme{
+    width: 100vw;
+    height: 100vh;
+    align-content: center;
+}
+
+.Title{
+    background-color: blue;
+    font-family: lato;
+    text-align: center;
+    color: white;
+    align-content: space-around;
+}
+
+.Overview{
+    font-family: lato;
+    font-size: 12px;
+    width: 50%;
+    justify-content: left;
+}
+
+li.horizontal{
+    float: left;
+    padding: 2px;
+}
+
+.poster{
+    float: left;
+    width: 40%;
+}
+
+.right{
+    float: right;
+    width: 60%;
+}
+
+.container-interno{
+    text-justify: distribute;
+    text-align: justify;
+    width: 600px;
+    
+}
+
+.topper{
+    text-align: center;
+    background-color: blue;
+    color:white;
+}
+
+.Votes{
+    border: 6px solid white;
+    border-radius: 1000px;
+}
+
+.bottom{
+    width: 80%;
+    float: bottom;
+}

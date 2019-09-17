@@ -1,0 +1,37 @@
+<div class="area_busca">
+    <input type="text" id="user_textbox"
+    [(ngModel)] = "parameters.searchword"
+    placeholder="Pesquise seu filme:">
+    <button (click)="getMovies()" class="search_button">Procurar</button>
+</div>
+<div *ngIf="response" class="movies_container">
+    <ul class = "filmes">
+        <li *ngFor="let movie of response.movies" class="filme">
+            <div class="container-interno">
+                <div class="topper">
+                    <a routerLink="/detailed-movie/{{movie.id}}" class="Title">{{ movie.titulo }}</a>
+                    <p class="Votes">{{ movie.vote_average*10 }}%</p>
+                    <p class="Date">{{ movie.release_date }}</p>
+                </div>
+                <div class="middle">
+                    <div class="poster"><img src={{movie.poster_path}}></div>
+                    <div class="right"><p class="Overview">{{ movie.overview }}</p></div>
+                </div>
+                <div class="bottom">
+                    <ul class="generos">
+                        <li *ngFor="let genre of movie.genres" class="horizontal">
+                            <p class="genero">{{ genre }}</p>
+                        </li>
+                    </ul>
+                </div>
+            
+            </div>
+        </li>
+        <br>
+    </ul>
+    <ul class="pages">
+        <li *ngFor="let page of response.total_pages" class="horizontal">
+            <button (click) = "changePage( page )">{{ page }}</button>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,20 @@
+<div *ngIf="movie">
+    <h3>{{ movie.title }}</h3>
+    <br>
+    <p>Data de estreia: {{movie.release_date}} | Média de votos {{ movie.vote_average*10 }}%</p>
+    <br>
+    <img src={{movie.poster_path}}>
+    <br>
+    <p>{{ movie.overview }}</p>
+    <ul class="generos">
+        <li *ngFor="let genre of movie.genres" class="horizontal">
+            <span class="genero">{{ genre }}</span>
+        </li>
+    </ul>
+    <p>{{ movie.status }}</p>
+    <br>
+    <p>Duração: {{ movie.duracao_h }}horas e {{movie.duracao_m}} minutos</p>
+    <p>Orçamento: ${{ movie.budget }} | Receita: ${{ movie.receita }}$ | Lucro: ${{movie.receita - movie.budget }}$</p>
+
+    <button (click)="goBack()">Voltar</button>
+</div>
